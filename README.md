@@ -1,0 +1,1 @@
+La aplicación aún se puede seguir mejorando, esta es una primera instancia de una aplicación dedicada principalmente para el  uso escolar, está sujeta a cambios, tanto de apariencia como de funcionalidades
