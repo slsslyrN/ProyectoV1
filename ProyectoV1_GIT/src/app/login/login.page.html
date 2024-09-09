@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="container">
+      <ion-list>
+        <h2>Registro</h2>
+        <ion-item>
+          <ion-input label="Correo electrónico" label-placement="floating" placeholder="Ej: andres.carranza@equisde.cl"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input label="Nueva contraseña" label-placement="floating" placeholder="No puede ser la que ya tenía"></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-input label="Confirmar contraseña" label-placement="floating" placeholder="Reescriba su contraseña"></ion-input>
+        </ion-item>
+
+        <ion-button expand="round" [routerLink]="'/home'" class="boton-continuar">Confirmar</ion-button>
+
+      </ion-list>
+    </div>
+
+
+  </ion-content>
+</ion-content>

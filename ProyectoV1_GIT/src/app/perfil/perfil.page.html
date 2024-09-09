@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="profile-container">
+    <div class="profile-photo">
+      <ion-avatar>
+        <img alt="Foto de perfil" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+    </div>
+
+    <div class="profile-info">
+      <h2>Nombre de la Persona</h2>
+      <div class="profile-details">
+        <ion-label>Sección: Por implementar</ion-label><br />
+        <ion-label>Sexo: Helicóptero apache</ion-label><br />
+        <ion-label>Edad: 17veranos como dicen los lolos</ion-label><br />
+        <ion-label>Actividad favorita: </ion-label>
+      </div>
+    </div>
+
+    <ion-button [routerLink]="'/home'" class="logout-button" color="danger" expand="round">Cerrar sesión</ion-button>
+  </div>
+</ion-content>
+
+<style>
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    height:fit-content;
+    background-color: #8f8fff;
+  }
+
+  .profile-photo {
+    align-self: flex-start;
+  }
+
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .profile-details {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+
+  .logout-button {
+    align-self: flex-end;
+    margin-top: auto ;
+    width: 50%;
+  }
+
+  ion-avatar {
+    width: 100px;
+    height: 100px;
+  }
+</style>
